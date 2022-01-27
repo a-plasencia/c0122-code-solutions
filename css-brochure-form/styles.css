@@ -1,15 +1,47 @@
 form {
   width: 50%;
   margin: auto;
-  font-family: "Brandon Grotesque", sans-serif;
 }
 
 h3 {
   text-align: center;
-  color: #ee6b66;
+  color: #ec5d57;
   text-transform: uppercase;
+  font-family: "Brandon Grotesque", sans-serif;
 }
 
 label {
+  padding-left: 2%;
   text-transform: uppercase;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+input {
+  width: 100%;
+  margin: auto;
+  border-color: #f3f3f3;
+  border-radius: 5px;
+  font-family: "Atlas Grotesk", sans-serif;
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+}
+
+div {
+  text-align: right;
+}
+
+button {
+  background-color: #ec5d57;
+  color: white;
+  border-color: #f6bdbb;
+  border-radius: 10px;
+  margin-top: 8px;
 }
