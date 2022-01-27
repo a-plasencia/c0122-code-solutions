@@ -1,0 +1,15 @@
+form {
+  width: 50%;
+  margin: auto;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: #ee6b66;
+  text-transform: uppercase;
+}
+
+label {
+  text-transform: uppercase;
+}
