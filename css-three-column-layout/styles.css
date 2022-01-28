@@ -1,0 +1,24 @@
+body {
+  background-color: #1996da;
+}
+
+h2 {
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.lato-text {
+  font-family: lato, serif;
+}
