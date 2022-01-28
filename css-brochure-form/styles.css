@@ -50,6 +50,7 @@ div {
 button {
   background-color: #ec5d57;
   color: white;
+  text-transform: uppercase;
   border-color: #ec5d57;
   border-radius: 20px;
   border-style: solid;
