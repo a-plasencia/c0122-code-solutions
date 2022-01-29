@@ -3,7 +3,37 @@ body {
 }
 
 h2 {
+  margin-top: 50px;
+}
+
+h2,
+h3 {
   color: white;
+  text-align: center;
+}
+
+p {
+  color: #ddd;
+  text-align: center;
+}
+
+section {
+  /* height: 80px;
+  width: 80px; */
+
+  /* justify-content: center;
+  align-items: center; */
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.symbol {
+  /* width: 45%;
+  margin: 30%; */
+  flex-basis: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -19,6 +49,11 @@ h2 {
   width: 100%;
 }
 
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
 .lato-text {
   font-family: lato, serif;
+  font-weight: 400;
 }
