@@ -1,0 +1,71 @@
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.row-wrap {
+  flex-wrap: wrap;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-one-half {
+  width: 50%;
+}
+
+.column-one-fourth {
+  flex-basis: calc(100% / 4);
+}
+
+.column-three-fourth {
+  width: 75%;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  color: red;
+  border-color: red;
+  background-color: white;
+}
+
+.button {
+  text-align: center;
+}
+
+.title-p {
+  text-align: center;
+}
+
+.p-text-color {
+  color: #454545;
+}
+
+.karla-400 {
+  font-family: karla, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.karla-700 {
+  font-family: karla, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.caps {
+  text-transform: uppercase;
+}
