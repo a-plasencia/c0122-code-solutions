@@ -1,0 +1,56 @@
+body {
+  background-color: #1996da;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+h2,
+h3 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: #ddd;
+  text-align: center;
+}
+
+section {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+}
+
+img {
+  width: 50%;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+}
+
+.lato-text {
+  font-family: lato, serif;
+  font-weight: 400;
+}
