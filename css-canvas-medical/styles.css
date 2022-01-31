@@ -41,6 +41,10 @@ button {
   border-color: #294464;
 }
 
+.small-text {
+  font-size: small;
+}
+
 .canvas-blue {
   width: 35%;
   margin-top: 5%;
