@@ -21,21 +21,17 @@
 }
 
 .hero-image {
-  width: 640px;
-  height: 640px;
+  width: 800px;
+  height: 450px;
   background-image: url("images/hero.jpg");
   background-size: cover;
   position: relative;
 }
 
-.hero-image > img {
-  width: 100%;
-}
-
 .overlay {
   background: linear-gradient(transparent, rgb(0 0 0 / 75%));
-  width: 640px;
-  height: 640px;
+  width: 800px;
+  height: 450px;
   position: absolute;
   bottom: 1px;
 }
