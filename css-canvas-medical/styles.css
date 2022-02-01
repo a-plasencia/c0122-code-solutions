@@ -29,11 +29,11 @@
 }
 
 .overlay {
-  background: linear-gradient(transparent, rgb(0 0 0 / 75%));
+  background: linear-gradient(transparent, rgb(120 120 120 / 75%));
   width: 800px;
   height: 450px;
   position: absolute;
-  bottom: 1px;
+  top: 1px;
 }
 
 .border-bottom {
