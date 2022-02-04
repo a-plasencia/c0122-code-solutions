@@ -2,9 +2,8 @@
 function filterOutStrings(values) {
   var filterStrings = [];
   for (var i = 0; i < values.length; i++) {
-    if (values[i] === '') {
-      filterStrings.pop(values[i]);
-    } else {
+    var type = typeof values[i];
+    if (type !== 'string') {
       filterStrings.push(values[i]);
     }
   }
