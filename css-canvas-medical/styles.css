@@ -41,7 +41,9 @@
 
 .hero-image-heading {
   z-index: 1;
-  position: relative;
+  position: absolute;
+  top: 70px;
+  left: 150px;
   width: 100%;
 }
 
