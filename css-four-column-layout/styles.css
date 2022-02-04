@@ -48,10 +48,20 @@ body {
   text-transform: capitalize;
 }
 
-.font {
+.font-thick {
   font-family: Barlow, sans-serif;
+  font-weight: 700;
+}
+
+.font-normal {
+  font-family: Barlow, sans-serif;
+  font-weight: 400;
 }
 
 .small-font {
   font-size: x-small;
+}
+
+.small-description-font {
+  font-size: small;
 }
