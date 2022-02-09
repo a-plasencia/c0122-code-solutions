@@ -1,10 +1,9 @@
 var $contactForm = document.querySelector('#contact-form');
-
 function contactForm(event) {
   event.preventDefault();
-  var nameValue = $contactForm.element.name.value;
-  var emailValue = $contactForm.element.email.value;
-  var messageValue = $contactForm.element.message.value;
+  var nameValue = $contactForm.elements.name.value;
+  var emailValue = $contactForm.elements.email.value;
+  var messageValue = $contactForm.elements.message.value;
   var messageData = {
     name: nameValue,
     email: emailValue,
