@@ -11,10 +11,8 @@ output: [2,3,4]
 */
 function tail(array) {
   var newTail = [];
-  for (var i = 0; i < array.length; i++) {
-    if (i !== 0) {
-      newTail.push(array[i]);
-    }
+  for (var i = 1; i < array.length; i++) {
+    newTail.push(array[i]);
   }
   return newTail;
 }

@@ -12,10 +12,8 @@ output: [1,2,3]
 function initial(array) {
   var noLastItem = [];
   var lastItem = array.length - 1;
-  for (var i = 0; i < array.length; i++) {
-    if (i !== lastItem) {
-      noLastItem.push(array[i]);
-    }
+  for (var i = 0; i < lastItem; i++) {
+    noLastItem.push(array[i]);
   }
   return noLastItem;
 }
