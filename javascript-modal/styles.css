@@ -24,17 +24,15 @@
   display: flex;
 }
 
-.hidden {
+.background {
+  background-color: white;
+}
+
+.popup.hidden {
   display: none;
 }
 
-.box {
-  width: 100%;
-
-  /* display: none; */
-}
-
-.box .close::before {
+.popup.overlay {
   left: 0;
   top: 0;
   width: 100%;
