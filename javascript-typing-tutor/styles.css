@@ -21,6 +21,7 @@
 
 .text {
   font-family: verdana, sans-serif;
+  letter-spacing: 0.2em;
 }
 
 .text.green {
