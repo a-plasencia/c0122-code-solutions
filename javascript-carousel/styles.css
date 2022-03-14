@@ -1,0 +1,48 @@
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.object-cover {
+  object-fit: cover;
+  width: 50%;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+  min-height: 80vh;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.fa-circle {
+  padding: 5px;
+}
+
+.fa-less-than {
+  font-size: 5rem;
+}
+
+.fa-greater-than {
+  font-size: 5rem;
+}
