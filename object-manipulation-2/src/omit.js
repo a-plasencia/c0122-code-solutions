@@ -11,7 +11,7 @@ function omit(source, keys) {
         counter++;
       }
     }
-    if (counter === 2) {
+    if (counter === keys.length) {
       omitObject[firstValue] = secondValue;
     }
     counter = 0;
