@@ -8,34 +8,21 @@ output (object) {foo: 1}
 
 function pick(source, keys) {
   var pickSource = {};
+  var pickBool = false;
   for (var key in source) {
     var firstValue = key;
     var secondValue = source[key];
     for (var i = 0; i < keys.length; i++) {
       if (key === keys[i]) {
-        // console.log('the value of First value is: ', firstValue);
-        // console.log('the value of the secondValue is: ', secondValue);
-        // console.log('the value of keys[i] is: ', keys[i]);
-        pickSource[firstValue] = secondValue;
+        pickBool = true;
+
       }
     }
+    if (pickBool === true && secondValue !== undefined) {
+      pickSource[firstValue] = secondValue;
+      pickBool = false;
+    }
   }
+
   return pickSource;
 }
-
-// function pick(source, keys) {
-//   var pickSource = {};
-//   for (var i = 0; i < keys.length; i++) {
-//     for (var key in source) {
-//       var firstValue = key;
-//       var secondValue = source[key];
-//       if (key === keys[i]) {
-//         console.log('the value of firstValue is: ', firstValue);
-//         console.log('the value of the secondValue is: ', secondValue);
-//         console.log('the value of keys[i] is: ', keys[i]);
-//         pickSource[firstValue] = secondValue;
-//       }
-//     }
-//   }
-//   return pickSource;
-// }
