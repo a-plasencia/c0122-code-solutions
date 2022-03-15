@@ -1,0 +1,1000 @@
+  114  http https://dog-facts-api.herokuapp.com/api/v1/resources/dogs?number=1
+  115  http https://dog-facts-api.herokuapp.com/api/v1/resources/dogs number==5
+  116  http https://dog-facts-api.herokuapp.com/api/v1/resources/dogs index==5
+  117  http https://dog.ceo/api/breeds/image/random
+  118  http https://dog.ceo/api/breed/hound/images/random/3
+  119  http https??dog.ceo/api/breeds/image/random/2
+  120  http https//dog.ceo/api/breeds/image/random/2
+  121  http https://dog.ceo/api/breed/hound/images/random/3
+  122  http https://dog.ceo/api/breedd/images/random/3
+  123  http https://dog.ceo/api/breed/images/random/3
+  124  http https://dog.ceo/api/breed/hound/images/random/3
+  125  http https://dog.ceo/api/breed/image/random/3
+  126  http https://dog.ceo/api/breed/hound/images/random/3
+  127  clear
+  128  http https://dog.ceo/api/breed/hound/images/random/3
+  129  http https://dog.ceo/api/breeds/image/random
+  130  http https://dog.ceo/api/breeds/list/all
+  131  http https://dog.ceo/api/breeds/image/random/3 Fetch!
+  132  http GET https://dog.ceo/api/breeds/image/random/3 Fetch!
+  133  http https://dog.ceo/api/breeds/image/random/3
+  134  http https://dog-facts-api.herokuapp.com/api/v1/resources/dogs index==5
+  135  http https://dog-facts-api.herokuapp.com/api/v1/resources/dogs number==5
+  136  http https://test.wikipedia.org/w/api.php
+  137  http https://dog.ceo/api/breeds/image/random/3
+  138  http https://en.wikipedia.org/wiki/List_of_dog_breeds
+  139  http https://en.wikipedia.org/wiki/List_of_dog_breeds pageids ==extant breeds
+  140  http https://en.wikipedia.org/wiki/List_of_dog_breeds titles
+  141  http https://dog.ceo/api/breeds/image/random/3
+  142  http https://en.wikipedia.org/wiki/List_of_dog_breeds alllinks
+  143* http https://en.wikipedia.org/wiki/List_of_dog_breeds 
+  144* http https://en.wikipedia.org/wiki/List_of_d
+  145  http https://dog.ceo/api/breeds/image/random/3
+  146  http https://en.wikipedia.org/wiki/List_of_dog_breeds alllinks
+  147  http https://en.wikipedia.org/wiki/List_of_dog_breeds readinglistentries==allcategories
+  148  http https://en.wikipedia.org/wiki/List_of_dog_breeds readinglistentries==categories
+  149  http https://dog.ceo/api/breeds/image/random/3
+  150  http https://en.wikipedia.org/wiki/List_of_dog_breeds action==parse
+  151  http https://en.wikipedia.org/wiki/List_of_dog_breeds action==parse prop==sections
+  152  http https://dog.ceo/api/breeds/image/random/3
+  153  http https://dog.ceo/api/breeds/image/random/1
+  154  http https://dog.ceo/api/breeds/image/random/3
+  155  http https://dog.ceo/api/breeds/image/random/1
+  156  http https://dog.ceo/api/breeds/image/random/3
+  157  http https://dog.ceo/api/breeds/image/random/1
+  158  pwd
+  159  git status
+  160  git branch --list
+  161  git switch string-manipulation-2
+  162  git status
+  163* 
+  164  http https://dog.ceo/api/breeds/image/random/1
+  165  git branch --list
+  166  git switch array-manipulation-2
+  167  git status
+  168  git add array-manipulation-2
+  169  git status
+  170  git commit -m "Completed array-manipulation-2 challenge."
+  171  git push origin array-manipulation-2
+  172  git switch master
+  173  http https://dog.ceo/api/breeds/image/random/1
+  174  clear
+  175* http https://dog.ceo/api/breeds/image/random/3
+  176  clear
+  177  pwd
+  178  git status
+  179  git switch master
+  180  git pull origin master
+  181  cd
+  182  ls
+  183  pwd
+  184  cd repos
+  185  ls
+  186  cd code-journal
+  187  pwd
+  188  git status
+  189  git switch master
+  190  git pull origin master
+  191  git branch --list
+  192  git switch issue-3-edit-an-entry
+  193  git status
+  194  git add css/styles.css
+  195  git add index.html
+  196  git add js/main.js
+  197  git status
+  198  git commit -m "Revised the use of a global variable as well as changed the viewChange function to be less manual and more flexible."
+  199  git status
+  200  git add js/main.js
+  201  git status
+  202  git commit -m "Revised the use of a global variable as well as changed the viewChange function to be less manual and more flexible."
+  203  git push origin issue-3-edit-an-entry
+  204  git switch master
+  205  git status
+  206  clear
+  207  pwd
+  208  git status
+  209  git switch master
+  210  git pull origin master
+  211  git status
+  212  clear
+  213  pwd
+  214  git status
+  215  git switch master
+  216  git pull origin master
+  217  git branch --list
+  218  git branch issue-4-delete-an-entry
+  219  git branch --list
+  220  git switch issue-4-delete-an-entry
+  221  git status
+  222  git add index.html
+  223  git add css/styles.css
+  224  git add js/main.js
+  225  git status
+  226  git commit -m "Added a click target for deleting an entry to the entry form that only appears if the user is editing an entry."
+  227  git push origin issue-4-delete-an-entry
+  228  git status
+  229  git add css/styles.css
+  230  git add index.html
+  231  git add js/main.js
+  232  git status
+  233  git commit -m "Show a confirmation modal when the user clicks the Delete Entry click target."
+  234  git push origin issue-4-delete-an-entry
+  235  git status
+  236  git add css/styles.css
+  237  git add index.html
+  238  git add js/main.js
+  239  git status
+  240  git commit -m "Hide the modal if the user clicks Cancel."
+  241  git status
+  242  git add js/main.js
+  243  git status
+  244  git commit -m "Hide the modal if the user clicks Cancel."
+  245  git push origin issue-4-delete-an-entry
+  246  git status
+  247  git add js/main.js
+  248  git status
+  249  git commit -m "Remove the entry from the data model and the entry's DOM tree from the page if the user clicks Delete.  As well as show the entries list if the user clicks Delete."
+  250  git push origin issue-4-delete-an-entry
+  251  clear
+  252  pwd
+  253  git status
+  254  git switch master
+  255  git status
+  256  git pull origin master
+  257  clear
+  258  cd
+  259  ls
+  260  cd repos
+  261  ls
+  262  cd c0122-code-solutions
+  263  git status
+  264  git switch master
+  265  git pull origin mater
+  266  git pull origin master
+  267  git branch --list
+  268  git branch object-manipulation-2
+  269  git branch --list
+  270  git switch object-manipulation-2
+  271  git status
+  272  git restore
+  273  git restore object-manipulation-2
+  274  git status
+  275  git add object-manipulation-2
+  276  git status
+  277  git commit -m "Started work on object-manipulation-2."
+  278  git push origin object-manipulation-2
+  279  git switch master
+  280  clear
+  281  pwd
+  282  git status
+  283  git switch master
+  284  git pull origin master
+  285  ls
+  286  cd
+  287  ls
+  288  cd repos
+  289  ls
+  290  cd code-journal
+  291  clear
+  292  pwd
+  293  git status
+  294  pwd
+  295  git status
+  296  git switch master
+  297  git pull origin master
+  298  git branch --list
+  299  git switch issue-4-delete-an-entry
+  300  git status
+  301  git commit -m "Checked for CSS stylings that had no affect, and tested all functionality again in a private browsing session as well as fixed any errors I can find."
+  302  git push origin issue-4-delete-an-entry
+  303  git switch master
+  304  git status
+  305  clear
+  306  pwd
+  307  git status
+  308  git switch master
+  309  git pull origin master
+  310  clear
+  311  pwd
+  312  git status
+  313  git switch master
+  314  git pull origin master
+  315  ls
+  316  cd
+  317  ls
+  318  cd repos
+  319  ls
+  320  clear
+  321  pwd
+  322  ls
+  323  whoami
+  324  git clone git@github.com:a-plasencia/ajax-project.git
+  325  ls
+  326  cd ajax-project
+  327  npm ci
+  328  clear
+  329  pwd
+  330  git status
+  331  git switch master
+  332  git pull origin master
+  333  git branch issue-1-generate-images-of-dogs
+  334  git branch --list
+  335  git switch issue-1-generate-images-of-dogs
+  336  git status
+  337  git add css/layout.css
+  338  git add css/styles.css
+  339  git add index.html
+  340  git status
+  341  git commit -m "Added a div [data-view='find-dogs'] to the html."
+  342  git push origin issue-1-generate-images-of-dogs
+  343  git status
+  344  http https://dog.ceo/api/breeds/image/random/3
+  345  git status
+  346  git add images/placeholder-image-square.jpg
+  347  git status
+  348  git add css/styles.css
+  349  git add index.html
+  350  git status
+  351  git commit -m "Before you click on the Get Dog button, there is a placeholder image in the center."
+  352  git push origin issue-1-generate-images-of-dogs
+  353  git status
+  354  clear
+  355  pwd
+  356  git status
+  357  http https://dog.ceo/api/breeds/image/random/3
+  358  git status
+  359  git add css/styles.css
+  360  git add index.html
+  361  git add js/main.js
+  362  git status
+  363  git commit -m "Added an unordered list to the [data-view='find-dogs'] html and listened for a 'click' event on the Get Dog button, which then generates a list of three dog images randomly from the dog-ceo api."
+  364  git status
+  365  git add js/main.js
+  366  git status
+  367  git commit -m "Added an unordered list to the [data-view='find-dogs'] html and listened for a 'click' event on the Get Dog button, which then generates a list of three dog images randomly from the dog-ceo api."
+  368  git push origin issue-1-generate-images-of-dogs
+  369  git status
+  370  git add images
+  371  git status
+  372  git add css/layout.css
+  373  git add css/styles.css
+  374  git add index.html
+  375  git status
+  376  git commit -m "Ensure that the three images wrap or don't wrap depending on if the viewport is mobile or desktop."
+  377  git push origin issue-1-generate-images-of-dogs
+  378  git status
+  379  git add css/styles.css
+  380  git add index.html
+  381  git add js/main.js
+  382  git status
+  383  git add index.html
+  384  git status
+  385  git commit -m "Make all three dog images presentable by using css as well as putting a card container around them.  Added logic where if three pictures already exist, remove those and generate three new pictures."
+  386  git push origin issue-1-generate-images-of-dogs
+  387  clear
+  388  pwd
+  389  git status
+  390  git switch master
+  391  git status
+  392  ls
+  393  cd
+  394  pwd
+  395  ls
+  396  cd repos
+  397  ls
+  398  cd c0122-code-solutions
+  399  pwd
+  400  git status
+  401  git switch master
+  402  git pull origin master
+  403  git branch --list
+  404  git switch object-manipulation-2
+  405  git status
+  406  git switch master
+  407  cd
+  408  ls
+  409  cd repos
+  410  ls
+  411  cd ajax-project
+  412  ls
+  413  git status
+  414  git switch master
+  415  git pull origin master
+  416  git branch --list
+  417  git switch issue-1-generate-images-of-dogs
+  418  git status
+  419  git add css/styles.css
+  420  git status
+  421  git commit -m "Removed all CSS properties that had no effect.  Tested all functionality again in a private browsing session.  Fixed all errors."
+  422  git push origin issue-1-generate-image-of-dogs
+  423  git push origin issue-1-generate-images-of-dogs
+  424  git switch master
+  425  git switch issue-1-generate-images-of-dogs
+  426  git status
+  427  clear
+  428  pwd
+  429  git status
+  430  git add css/styles.css
+  431  git add index.html
+  432  git status
+  433  git commit -m "Fixed offcentered pictures."
+  434  git push origin issue-1-generate-images-of-dogs
+  435  git status
+  436  git add index.html
+  437  git status
+  438  git commit -m "Minor class name change."
+  439  git push origin issue-1-generate-images-of-dogs
+  440  git switch master
+  441  clear
+  442  pwd
+  443  git status
+  444  git switch master
+  445  git pull origin master
+  446  clear
+  447  pwd
+  448  git status
+  449  git switch master
+  450  git pull origin master
+  451  clear
+  452  pwd
+  453  git status
+  454  git switch master
+  455  git pull origin master
+  456  git branch --list
+  457  git branch issue-2-see-breed-name-of-dog
+  458  git branch --list
+  459  git switch issue-2-see-breed-name-of-dog
+  460  git status
+  461  git add css/styles.css
+  462  git add index.html
+  463  git status
+  464  git commit -m "On an example card, put the appropiate breed name and make sure the text matches the figma."
+  465  git push origin issue-2-see-breed-name-of-dog
+  466  http https://dog.ceo/api/breeds/image/random/3
+  467  git status
+  468  git add css/styles.css
+  469  git add index.html
+  470  git add js/main.js
+  471  git status
+  472  git commit -m "Get the names of all three dogs on each api call.  As well as putting the appropiate names under each dog."
+  473  git push origin issue-2-see-breed-name-of-dog
+  474  git status
+  475  git add index.html
+  476  git status
+  477  git commit -m "Ensure that each name and image look good on both desktop and mobile viewports."
+  478  git push origin issue-2-see-breed-name-of-dog
+  479  pwd
+  480  git status
+  481  git add index.html
+  482  git status
+  483  git commit -m "Removed all CSS properties that have no effect.  Tested all functionality again in a private browsing session.  Fixed all errors."
+  484  git push origin issue-2-see-breed-name-of-dog
+  485  git switch master
+  486  clear
+  487  pwd
+  488  git status
+  489  git switch master
+  490  git pull origin master
+  491  clear
+  492  pwd
+  493  git status
+  494  git switch master
+  495  git pull origin master
+  496  clear
+  497  pwd
+  498  git status
+  499  git switch master
+  500  git pull origin master
+  501  git branch --list
+  502  git branch issue-3-favorite-the-dogs
+  503  git branch --list
+  504  git switch issue-3-favorite-the-dogs
+  505  git status
+  506  git add css/styles.css
+  507  git add index.html
+  508  git status
+  509  git commit -m "Go to font awesome and get the star icon and filled in star icon."
+  510  git push origin issue-3-favorite-the-dogs
+  511  git status
+  512  git add css/styles.css
+  513  git add index.html
+  514  git add js/data.js
+  515  git add js/main.js
+  516  git status
+  517  git commit -m "Reformated the get3Images function to call a new function called renderDogs which holds all of the DOM tree functionality.  Also got the star icon to appear to the right of the breed name."
+  518  git push origin issue-3-favorite-the-dogs
+  519  git status
+  520  git add js/main.js
+  521  git status
+  522  git commit -m "Have the icon change class name when clicked."
+  523  git status
+  524  git add js/main.js
+  525  git status
+  526  git commit -m "Have the icon change class name when clicked."
+  527  git push origin issue-3-favorite-the-dogs
+  528  git status
+  529  git add js/main.js
+  530  git status
+  531  git commit -m "Made the star change without the use of a global variable."
+  532  git push origin issue-3-favorite-the-dogs
+  533  git status
+  534  git stauts
+  535  git status
+  536  git add index.html
+  537  git add js/main.js
+  538  git status
+  539  git commit -m "Made the data model, and listened for the 'click' events on the Get Dog button and if the star icon is filled in.  Put the appropiate favorited image and breed name into an object and shifted it into the data entries data mode."
+  540  git push origin issue-3-favorite-the-dogs
+  541  git status
+  542  git add js/data.js
+  543  git status
+  544  git commit -m "Increment the favorites id and verifed that the favorites are saved to the local storage along with the rest of the data model on page reload."
+  545  git push origin issue-3-favorite-the-dogs
+  546  git status
+  547  git add css/styles.css
+  548  git status
+  549  git commit -m "Remove all CSS styling that had no affect or was otherwise unecessary.  Tested all functionality again in a private browsing session.  Fixed all errors."
+  550  git push origin issue-3-favorite-the-dogs
+  551  git status
+  552  git switch master
+  553  clear
+  554  pwd
+  555  git status
+  556  git switch master
+  557  git pull origin master
+  558  clear
+  559  pwd
+  560  git status
+  561  git switch master
+  562  git pull origin master
+  563  git branch --list
+  564  git branch issue-4-view-the-favorited-dogs
+  565  git branch --list
+  566  git switch issue-4-view-the-favorited-dogs
+  567  git status
+  568  git add index.html
+  569  git status
+  570  git commit -m "Add a sbiling div[data-view='favorite-dogs'] to the HTML."
+  571  git commit --amend -m "Add a sibiling div[data-view='favorite-dogs'] to the HTML."
+  572  git push origin issue-4-view-the-favorited-dogs
+  573  git status
+  574  git add index.html
+  575  git status
+  576  git commit -m "Add an empty unordered list to the div[data-view='favorite-dogs'] element in the HTML."
+  577  git push origin issue-4-view-the-favorited-dogs
+  578  git status
+  579  git add css/styles.css
+  580  git add index.html
+  581  git add js/main.js
+  582  git status
+  583  git commit -m "If there are no recorded entries in the data model.  Then write a line saying that 'No favorites have been recorded' in the favorite-dogs page."
+  584  git push origin issue-4-view-the-favorited-dogs
+  585  git status
+  586  git add index.html
+  587  git status
+  588  git commit -m "Added dummy journal entries to the HTML and ensure that both the desktop and mobile view match the wireframes."
+  589  git status
+  590  git add index.html
+  591  git add js/main.js
+  592  git status
+  593  git commit -m "Add some dummy journal entries to the HTML and ensure that both the desktop and mobile view match the wireframes.  Used a loop to create a DOM tree for each journal entry in the data model and append it to the page when the 'DOMContentLoaded' event is fired."
+  594  git push origin issue-4-view-the-favorited-dogs
+  595  git switch master
+  596  git status
+  597  git switch master
+  598  clear
+  599  pwd
+  600  git status
+  601  git switch master
+  602  git pull origin master
+  603  clear
+  604  pwd
+  605  whoami
+  606  git status
+  607  git switch master
+  608  git pull origin master
+  609  git branch --list
+  610  git switch issue-4-view-the-favorited-dog
+  611  git switch issue-4-view-the-favorited-dogs
+  612  git status
+  613  git add css/styles.css
+  614  git add index.html
+  615  git status
+  616  git commit -m "Add a navigation item to the navbar called 'Favorites'."
+  617  git push origin issue-4-view-the-favorited-dogs
+  618  git status
+  619  git add css/styles.css
+  620  git status
+  621  git commit -m "Fixed minor spacing issue and made sure the anchor button to the 'find-dogs' view was inside the 'favorite-view'."
+  622  git push origin issue-4-view-the-favorited-dogs
+  623  git status
+  624  git add index.html
+  625  git add js/main.js
+  626  git status
+  627  git commit -m "Ensure that clicking the 'Find Dog' and 'Favorites' button in the navbar take you to the respective pages."
+  628  git status
+  629  git add js/main.js
+  630  git status
+  631  git commit -m "Ensure that refreshing the page shows the same view as before refreshing."
+  632  git push origin issue-4-view-the-favorited-dogs
+  633  git status
+  634  git add js/main.js
+  635  git status
+  636  git commit -m "Fixed duplicating entry bug."
+  637  git push origin issue-4-view-the-favorited-dogs
+  638  git status
+  639  git add js/main.js
+  640  git status
+  641  git commit -m "Ensure that favoriting more dogs also creates a new DOM tree for it and add it to the page."
+  642  git push origin issue-4-view-the-favorited-dogs
+  643  git status
+  644  git add js/main.js
+  645  git status
+  646  git commit -m "Tested all functionality again in a private browsing session."
+  647  git push origin issue-4-view-the-favorited-dogs
+  648  git status
+  649  git add js/data.js
+  650  git status
+  651  git commit -m "Remove all CSS styling that had no affect or was otherwise unnecessary and fixed all errors."
+  652  git push origin issue-4-view-the-favorited-dogs
+  653  git status
+  654  git switch master
+  655  clear
+  656  pwd
+  657  git status
+  658  git switch master
+  659  git pull origin master
+  660  clear
+  661  pwd
+  662  git status
+  663  git switch master
+  664  git pull origin master
+  665  git branch --list
+  666  git branch issue-5-remove-favorited-dog
+  667  git branch --list
+  668  git switch issue-5-remove-favorited-dog
+  669  git status
+  670  git add css/styles.css
+  671  git add index.html
+  672  git status
+  673  git commit -m "Made a modal."
+  674  git push origin issue-5-remove-favorited-dog
+  675  git status
+  676  git add index.html
+  677  git add js/main.js
+  678  git status
+  679  git commit -m "Make a 'click listener for the star icons in the unordered list element in the 'favorite-dogs' view."
+  680  git status
+  681  git add js/main.js
+  682  git status
+  683  git commit -m "Make a 'click listener for the star icons in the unordered list element in the 'favorite-dogs' view."
+  684  git push origin issue-5-remove-favorited-dog
+  685  git status
+  686  git add js/data.js
+  687  git add js/main.js
+  688  git status
+  689  git commit -m "Remove the entry from the data model and the entry's DOM tree from the page if the user clicks 'yes'."
+  690  git push origin issue-5-remove-favorited-dog
+  691  git status
+  692  git add css/layout.css
+  693  git add index.html
+  694  git status
+  695  git commit -m "Removed all CSS styling that had no affect or was otherwise unnecessary.  Tested all functionality again in a private browsing session."
+  696  git status
+  697  git push origin issue-5-remove-favorited-dog
+  698  git status
+  699  git switch master
+  700  clear
+  701  pwd
+  702  git status
+  703  git switch master
+  704  git pull origin master
+  705  clear
+  706  pwd
+  707  git status
+  708  git switch master
+  709  git pull origin master
+  710  clear
+  711  pwd
+  712  git status
+  713  git switch master
+  714  git pull origin master
+  715  git branch --list
+  716  git branch code-cleanup
+  717  git branch --list
+  718  git switch code-cleanup
+  719  git status
+  720  git add css/styles.css
+  721  git status
+  722  git add images
+  723  git status
+  724  git commit -m "Cleaned up some code and readjusted dog card sizes."
+  725  git push origin code-cleanup
+  726  git status
+  727  git add css/layout.css
+  728  git add css/styles.css
+  729  git add index.html
+  730  git add js/main.js
+  731  git status
+  732  git commit -m "Changed name of 'a' elements to better match there purpose and cleaned up any unnecessary CSS."
+  733  git push origin code-cleanup
+  734  git status
+  735  git switch master
+  736  clear
+  737  pwd
+  738  git status
+  739  git switch master
+  740  git pull origin master
+  741  clear
+  742  pwd
+  743  git status
+  744  git switch master
+  745  git pull origin master
+  746  git branch --list
+  747  git branch user-interfaces
+  748  git branch --list
+  749  git switch user-interfaces
+  750  git status
+  751  git add css/styles.css
+  752  git add index.html
+  753  git status
+  754  git commit -m "Decided on and chose appropiate color palette for the loading symbol."
+  755  git push origin user-interfaces
+  756  git status
+  757  git add css/styles.css
+  758  git add js/main.js
+  759  git status
+  760  git commit -m "Loading symbol properly comes and goes when clicking the api request."
+  761  git status
+  762  git add js/main.js
+  763  git commit -m "Loading symbol properly comes and goes when clicking the api request."
+  764  git push origin user-interfaces
+  765  git status
+  766  git add css/styles.css
+  767  git add index.html
+  768  git add js/main.js
+  769  git status
+  770  git commit -m "Need to make an error message appear when the network isn't online."
+  771  git push origin user-interfaces
+  772  cd
+  773  pwd
+  774  ls
+  775  cd repos
+  776  ls
+  777  cd c0122-code-solutions
+  778  pwd
+  779  git status
+  780  git switch master
+  781  git pull origin master
+  782  git branch --list
+  783  git switch object-manipulation-2
+  784  git status
+  785  git add object-manipulation-2
+  786  git status
+  787  git commit -m "WIP object-manipulation-2 almost done with solving algorithm."
+  788  git status
+  789  git add object-manipulation-2
+  790  git status
+  791  git commit -m "WIP object-manipulation-2 almost done with solving algorithm."
+  792  git push origin object-manipulation-2
+  793  git switch master
+  794  cd
+  795  ls
+  796  cd repos
+  797  ls
+  798  cd ajax-project
+  799  pwd
+  800  git status
+  801  git add css/styles.css
+  802  git add js/main.js
+  803  git status
+  804  git commit -m "Added error message listener and tested functionality via chrome dev tools."
+  805  git push origin user-interfaces
+  806  git switch master
+  807  clear
+  808  pwd
+  809  git status
+  810  git switch master
+  811  git pull origin master
+  812  clear
+  813  pwd
+  814  git status
+  815  git switch master
+  816  git pull origin master
+  817  git branch --list
+  818  git branch project-polish
+  819  git status
+  820  git branch --list
+  821  git switch project-polish
+  822  git remote set-url origin git@github.com:a-plasencia/Top-Dogs.git
+  823  cd
+  824  ls
+  825  cd repos
+  826  ls
+  827  mv ajax-project top-dogs
+  828  ls
+  829  cd top-dogs
+  830  git status
+  831  git add readme.md
+  832  git add images/favicon.ico
+  833  git add index.html
+  834  git status
+  835  git add README.md
+  836  git status
+  837  git commit -m "Completed meta tags making pull request to check preview on linked in."
+  838  git status
+  839  git push origin project-polish
+  840  git switch master
+  841  clear
+  842  pwd
+  843  git status
+  844  git switch master
+  845  git pull origin master
+  846  git status
+  847  clear
+  848  pwd
+  849  git status
+  850  git switch master
+  851  git pull origin master
+  852  cd
+  853  ls
+  854  cd repos
+  855  ls
+  856  cd c0122-code-solutions
+  857  git status
+  858  git switch master
+  859  git pull origin master
+  860  git branch --list
+  861  git switch object-manipulation-2
+  862  git status
+  863  git add object-manipulation-2
+  864  git status
+  865  git commit -m "Completed invert, will continue through the other functions."
+  866  git push origin object-manipulation-2
+  867  git status
+  868  git add object-manipulation-2
+  869  git status
+  870  git commit -m "Finished the default function."  
+  871  git push origin object-manipulation-2
+  872  git status
+  873  git add object-manipulation-2
+  874  git status
+  875  git commit -m "One more function to be completed for object-manipulation-2."
+  876  git push origin object-manipulation-2
+  877  git status
+  878  git add object-manipulation-2
+  879  git status
+  880  git commit -m "All object functions are correct but I cannot explain omit so its not finished yet."
+  881  git push origin object-manipulation-2
+  882  git status
+  883  git add object-manipulation-2
+  884  git status
+  885  git commit -m "Figured out how omit works changed code for clearer understanding."
+  886  git push origin object-manipulation-2
+  887  git switch master
+  888  clear
+  889  pwd
+  890  git status
+  891  git switch master
+  892  git pull origin master
+  893  clear
+  894  pwd
+  895  git status
+  896  git switch master
+  897  git pull origin master
+  898  clear
+  899  pwd
+  900  git status
+  901  git switch master
+  902  git pull origin master
+  903  git branch es6-const-let
+  904  git branch --list
+  905  git switch es6-const-let
+  906  git status
+  907  git add es6-const-let
+  908  git status
+  909  git commit -m "Completed es6-const-let exercise."
+  910  git push origin es6-const-let
+  911  git switch master
+  912  clear
+  913  pwd
+  914  git status
+  915  git switch master
+  916  git pull origin master
+  917  git branch es6-template-literals
+  918  git branch --list
+  919  git switch es6-template-literals
+  920  git status
+  921  git add es6-template-literals
+  922  git status
+  923  git commit -m "Completed es6-template-literals exercise."
+  924  git push origin es6-tempate-literals
+  925  git push origin es6-template-literals
+  926  git switch master
+  927  clear
+  928  pwd
+  929  git status
+  930  git switch master
+  931  git pull origin master
+  932  git status
+  933  git pull origin master
+  934  clear
+  935  pwd
+  936  git status
+  937  git switch master
+  938  git pull origin master
+  939  git branch es6-destructuring
+  940  git branch --list
+  941  git switch es6-destructuring
+  942  git status
+  943  git add es6-destructuring
+  944  git status
+  945  git commit -m "Completed es6-destructuring exercise."
+  946  git push origin es6-destructuring
+  947  git status
+  948  git add es6-destructuring
+  949  git status
+  950  git commit -m "Properly used aliases in book2." 
+  951  git push origin es6-destructuring
+  952  git status
+  953  git switch master
+  954  git status
+  955  clear
+  956  git status
+  957  git switch master
+  958  git pull origin master
+  959  git branch es6-arrow-functions
+  960  git branch --list
+  961  git switch es6-arrow-functions
+  962  git status
+  963  whoami
+  964  git status
+  965  git add es6-arrow-functions
+  966  git status
+  967  git commit -m "Completed es6-arrow-functions exercise."
+  968  git push origin es6-arrow-functions
+  969  git switch master
+  970  clear
+  971  pwd
+  972  git status
+  973  git switch master
+  974  git pull origin master
+  975  git branch command-line-basics
+  976  git branch --list
+  977  git switch command-line-basics
+  978  git status
+  979  clear
+  980  git status
+  981  pwd
+  982  cd
+  983  ls
+  984  cd repos
+  985  ls
+  986  cd c0122-code-solutions
+  987  pwd
+  988  cd command-line-basics
+  989  pwd
+  990  man man
+  991  whoami
+  992  pwd
+  993  cd
+  994  clear
+  995  whoami
+  996  pwd
+  997  ls
+  998  cd repos
+  999  ls
+ 1000  cd c0122-code-solutions
+ 1001  cd command-line-basics
+ 1002  pwd
+ 1003  man man
+ 1004  man cat
+ 1005  cat laziness.txt
+ 1006  cat impatience.txt
+ 1007  cat hubris.txt
+ 1008  cat laziness.txt impatience.txt hubris.txt
+ 1009  cat laziness.txt impatience.txt hubrix.txt > three-virtues.txt
+ 1010  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+ 1011  cat three-virtues.txt
+ 1012  man ls
+ 1013  ls -a
+ 1014  ls -F
+ 1015  ls -aF lfz-staff
+ 1016  ls -a lfz-staff
+ 1017  ls -F lfz-staff
+ 1018  ls -aF lfz-staff > lfz-staff/contents.txt
+ 1019  cat lfz-staff/contents.txt
+ 1020  man pwd
+ 1021  pwd > i-was-here.txt
+ 1022  ls
+ 1023  cat i-was-here.txt
+ 1024  man echo
+ 1025  echo 'Hello, World!'
+ 1026  echo 'Hello, World!' > hello.txt
+ 1027  ls
+ 1028  cat hello.txt
+ 1029  man touch
+ 1030  touch tag-youre-it.txt
+ 1031  ls
+ 1032  cat tag-youre-it.txt
+ 1033  man touch
+ 1034  touch snoot
+ 1035  ls
+ 1036  touch snoot > boop.txt
+ 1037  ls snoot
+ 1038  ls -aF snoot
+ 1039  touch snoot boop.txt
+ 1040  ls -aF snoot
+ 1041  man touch
+ 1042  touch snoot...boop.txt
+ 1043  ls -aF snoot
+ 1044  touch snoot..boop.txt
+ 1045  ls -aF snoot
+ 1046  man touch
+ 1047  touch snoot > boop.txt
+ 1048  ls snoot
+ 1049  ls -a snoot
+ 1050  ls snoot/
+ 1051  touch snoot/boop.txt
+ 1052  ls -a snoot
+ 1053  man mkdir
+ 1054  mkdir parent
+ 1055  ls
+ 1056  man mkdir
+ 1057  mkdir -p parent/child/grandchild
+ 1058  ls
+ 1059  ls parent
+ 1060  ls parent child
+ 1061  ls child
+ 1062  touch parent/.gitkeep
+ 1063  ls parent
+ 1064  ls
+ 1065  touch parent/child.gitkeep
+ 1066  ls child
+ 1067  ls parent
+ 1068  touch parent.gitkeep
+ 1069  touch parent/child/.gitkeep
+ 1070  touch parent/.gitkeep
+ 1071  touch child
+ 1072  touch parent .gitkeep
+ 1073  touch parent.gitkeep
+ 1074  touch parent/.gitkeep
+ 1075  touch parent/child/grandchild .gitkeep
+ 1076  ls -a
+ 1077  ls parent
+ 1078  ls parent/child
+ 1079  ls -a parent
+ 1080  ls -a parent/child
+ 1081  ls -a parent/child/grandchild
+ 1082  ls-a parent/child/grandchild
+ 1083  ls -a parent/child/grandchild
+ 1084  ls -a parent
+ 1085  ls -a parent/child
+ 1086  ls -a parent/child/grandchild
+ 1087  touch parent/child/.gitkeep
+ 1088  touch parent/child/grandchild/.gitkeep
+ 1089  ls -a parent/child
+ 1090  ls -a parent/child/grandchild 
+ 1091  man mv
+ 1092  mv pokiemans pokemon
+ 1093  ls
+ 1094  man rm
+ 1095  rm lol.txt
+ 1096  ls
+ 1097  rm snoot...boop.txt
+ 1098  rm snoot..boop.txt
+ 1099  ls
+ 1100  rm parent.gitkeep
+ 1101  ls
+ 1102  ls kill-me
+ 1103  man rm
+ 1104  rm -r kill-me
+ 1105  ls
+ 1106  man cp
+ 1107  cp and-then.txt no-and-then.txt
+ 1108  ls
+ 1109  cat and-then.txt
+ 1110  cat no-and-then.txt
+ 1111  man history
+ 1112  history
+ 1113  history > command-history.txt
