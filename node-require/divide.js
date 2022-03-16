@@ -1,7 +1,7 @@
 function divide(x, y) {
   let quotient = 0;
   quotient = x / y;
-  return console.log('result: ', quotient);
+  return quotient;
 }
 
 module.exports = divide;

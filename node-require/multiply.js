@@ -1,7 +1,7 @@
 function multiply(x, y) {
   let product = 0;
   product = x * y;
-  return console.log('result: ', product);
+  return product;
 }
 
 module.exports = multiply;
