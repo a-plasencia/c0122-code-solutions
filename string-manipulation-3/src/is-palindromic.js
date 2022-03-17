@@ -13,11 +13,11 @@ output(boolean) true
 
 // function isPalindromic(string) {
 //   var firstString = string;
-//   var secondString = '';
-//   firstString.join('');
-//   if (firstString === 1) {
-//     for (i = string.length; i > 0; i--) {
-
+//   firstString = firstString.split(' ');
+//   // var secondString = '';
+//   if (firstString.length === 1) {
+//     for (let i = string.length - 1; i >= 0; i--) {
+//       console.log('the letter is currently ', string[i]);
 //     }
 //   }
 // }
