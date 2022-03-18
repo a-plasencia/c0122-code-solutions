@@ -2,6 +2,7 @@ let data = require('./data.json');
 const fs = require('fs');
 const create = require('./data-add.js');
 const update = require('./data-update.js');
+const deleteEntry = require('./data-delete');
 const command = process.argv[2];
 const createMessage = process.argv[3];
 const edit = process.argv[3];
@@ -21,15 +22,19 @@ if (command === 'read') {
   fs.writeFile('data.json', data, err => {
     if (err) throw err;
   });
-}
-
-if (command === 'update') {
+} else if (command === 'update') {
   update(edit, editMessage);
   data = JSON.stringify(data, null, 2);
   fs.writeFile('data.json', data, err => {
     if (err) throw err;
   });
-}
+} else if (command === 'delete') {
+  deleteEntry(edit);
+  data = JSON.stringify(data, null, 2);
+  fs.writeFile('data.json', data, err => {
+    if (err) throw err;
+  });
+} else { console.log('invalid command'); }
 
 // successful test console.logs stay here
 // console.log(command);
