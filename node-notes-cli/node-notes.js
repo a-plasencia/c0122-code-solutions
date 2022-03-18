@@ -35,8 +35,3 @@ if (command === 'read') {
     if (err) throw err;
   });
 } else { console.log('invalid command'); }
-
-// successful test console.logs stay here
-// console.log(command);
-// console.log(data);
-// console.log(data.nextId);
