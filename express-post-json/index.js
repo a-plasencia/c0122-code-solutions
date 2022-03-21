@@ -3,26 +3,33 @@ const express = require('express');
 const app = express();
 const jsonMiddleware = express.json();
 app.use(jsonMiddleware);
-const grades = {};
-let nextId = 1;
+
+let nextId = 2;
+const grades = {
+  1: {
+    id: 1,
+    name: 'Plasencia Alex',
+    course: 'Express',
+    score: 50
+  }
+};
 
 app.get('/api/grades', (req, res) => {
   const gradesArray = [];
 
-  for (var key in grades) {
+  for (const key in grades) {
     gradesArray.push(grades[key]);
   }
   res.json(gradesArray);
 });
 
-app.post('/api/grades', (res, req) => {
+app.post('/api/grades', (req, res) => {
   const newGrade = req.body;
   const id = nextId;
   newGrade.id = id;
-  nextId++;
   grades[id] = newGrade;
-  res.statusCode(201).json(newGrade);
-
+  nextId++;
+  res.status(201).json(newGrade);
 });
 
 app.listen(3000, () => {
