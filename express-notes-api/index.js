@@ -16,10 +16,27 @@ app.get('/api/notes', (req, res) => {
   res.status(200).json(notesArray);
 });
 
-// app.get('/api/notes:id', (req, res) => {
-//   const id = Number(req.params.id);
-//   if (id < 0) {
-//     res.status(400);
-//     console.error('The number you entered was negative, please enter a positve integer');
-//   }
-// });
+app.get('/api/notes/:id', (req, res) => {
+  const id = Number(req.params.id);
+  if (id > 0) {
+    if (!data.notes[id]) {
+      res.status(404).send(
+        `
+        {
+          "error": "cannot find note with id ${id}"
+        }
+        `);
+    } else {
+      res.status(200).json(data.notes[id]);
+    }
+  } else if (id < 0) {
+    console.error('The number you entered was negative, please enter a positve integer');
+    res.status(400).send(
+      `
+      {
+        "error": "id must be a positive integer"
+      }
+      `
+    );
+  }
+});
