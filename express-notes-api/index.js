@@ -16,7 +16,7 @@ const error = {
     error: 'content is a required field'
   },
   post500: {
-    error: 'An unexpected error occurd'
+    error: 'An unexpected error occured'
   }
 };
 
@@ -48,16 +48,40 @@ app.get('/api/notes/:id', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
-  const newNote = req.body;
-  const id = data.nextId;
-  newNote.id = id;
-  data.notes[id] = newNote;
-  data.nextId++;
-  const dataString = JSON.stringify(data, null, 2);
-  fs.writeFile('derp/data.json', dataString, err => {
-    if (err) {
-      res.status(500).json(error.post500);
-      console.error(err);
-    } else { res.status(201).json(newNote); }
-  });
+  if (req.body === undefined) {
+    res.status(400).json(error.post400);
+  } else if (req.body !== undefined) {
+    const newNote = req.body;
+    const id = data.nextId;
+    newNote.id = id;
+    data.notes[id] = newNote;
+    data.nextId++;
+    const dataString = JSON.stringify(data, null, 2);
+    fs.writeFile('derp/data.json', dataString, err => {
+      if (err) {
+        res.status(500).json(error.post500);
+        console.error(err);
+      } else { res.status(201).json(newNote); }
+    });
+  }
+});
+
+app.delete('/api/notes/:id', (req, res) => {
+  const id = Number(req.params.id);
+  if (id > 0) {
+    if (!data.notes[id]) {
+      res.status(404).json(error.get404);
+    } else {
+      delete data.notes[id];
+      const dataString = JSON.stringify(data, null, 2);
+      fs.writeFile('data.json', dataString, err => {
+        if (err) {
+          res.status(500).json(error.post500);
+          console.error(err);
+        } else { res.sendStatus(204); }
+      });
+    }
+  } else if (id < 0) {
+    res.status(400).json(error.get400);
+  }
 });
