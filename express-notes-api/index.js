@@ -48,9 +48,9 @@ app.get('/api/notes/:id', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
-  if (req.body === undefined) {
+  if (req.body.content === undefined) {
     res.status(400).json(error.post400);
-  } else if (req.body !== undefined) {
+  } else if (req.body.content !== undefined) {
     const newNote = req.body;
     const id = data.nextId;
     newNote.id = id;
@@ -90,7 +90,7 @@ app.put('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
   if (id < 0) {
     res.status(400).json(error.get400);
-  } else if (req.body === undefined) {
+  } else if (req.body.content === undefined) {
     res.status(400).json(error.post400);
   } else if (id > 0) {
     if (!data.notes[id]) {
