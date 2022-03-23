@@ -56,7 +56,7 @@ app.post('/api/notes', (req, res) => {
     data.notes[id] = newNote;
     data.nextId++;
     const dataString = JSON.stringify(data, null, 2);
-    fs.writeFile('derp/data.json', dataString, err => {
+    fs.writeFile('data.json', dataString, err => {
       if (err) {
         res.status(500).json(error.post500);
         console.error(err);
