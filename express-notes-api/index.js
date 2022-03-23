@@ -37,8 +37,7 @@ app.get('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
   if (id > 0) {
     if (!data.notes[id]) {
-
-      res.status(404).json(error.get404);
+      res.status(404).json(`error: cannot find note with id ${id}`);
     } else {
       res.status(200).json(data.notes[id]);
     }
@@ -70,7 +69,7 @@ app.delete('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
   if (id > 0) {
     if (!data.notes[id]) {
-      res.status(404).json(error.get404);
+      res.status(404).json(`error: cannot find note with id ${id}`);
     } else {
       delete data.notes[id];
       const dataString = JSON.stringify(data, null, 2);
@@ -94,7 +93,7 @@ app.put('/api/notes/:id', (req, res) => {
     res.status(400).json(error.post400);
   } else if (id > 0) {
     if (!data.notes[id]) {
-      res.status(404).json(error.get404);
+      res.status(404).json(`error: cannot find note with id ${id}`);
     } else {
       const newNote = req.body;
       data.notes[id] = newNote;
