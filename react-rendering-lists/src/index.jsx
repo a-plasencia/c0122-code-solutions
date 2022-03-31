@@ -14,7 +14,7 @@ class Pokemon extends React.Component {
     return (
       <ui>
         {pokedex.map(pokedex => (
-          <li key={pokedex.id}>
+          <li key={pokedex.number}>
             {pokedex.name}
           </li>
         ))}
