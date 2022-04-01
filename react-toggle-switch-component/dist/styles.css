@@ -1,0 +1,18 @@
+i {
+  font-size: 5rem;
+}
+
+.fa-toggle-on {
+  color: green;
+}
+
+.fa-toggle-off {
+  color: red;
+}
+
+span {
+  font-size: 2rem;
+  padding-left: 3rem;
+  position: relative;
+  bottom: 1.5rem;
+}
