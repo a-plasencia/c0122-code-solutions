@@ -1,0 +1,16 @@
+.my-custom-row {
+  background-color: bisque;
+  height: 400px;
+}
+
+img {
+  width: 100%;
+}
+
+.custom-class-2 {
+  height: 20px;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
