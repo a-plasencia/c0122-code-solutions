@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+}
+
+i {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+h1 {
+  margin-left: 1rem;
+}
+
+h3 {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.white-box {
+  background-color: white;
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gray-box {
+  background-color: rgb(100 100 100 / 80%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
