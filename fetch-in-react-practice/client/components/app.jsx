@@ -83,20 +83,27 @@ export default class App extends React.Component {
      * And specify the "Content-Type" header as "application/json"
      */
 
-    // const todoCheck = {};
-    // for (let i = 0; i < this.state.todos.length; i++) {
-    //   if (todoId === this.state.todos[i].todoId) {
-    //     todoCheck.isCompleted = !this.state.todos[i].isCompleted;
-    //     console.log('todoChecks value is: ', todoCheck);
-    //   }
-    // }
-    // fetch(`/api/todos/${todoId}`, {
-    //   method: 'PATCH',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify()
-    // });
+    const todoCheck = {};
+    for (let i = 0; i < this.state.todos.length; i++) {
+      if (todoId === this.state.todos[i].todoId) {
+        todoCheck.isCompleted = !this.state.todos[i].isCompleted;
+      }
+    }
+    fetch(`/api/todos/${todoId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(this.state.todos[todoId].isCompleted)
+    })
+      .then(res => res.json)
+      .then(data => {
+        const shallowToDoList = this.state.todos.concat();
+        shallowToDoList.splice(todoId, 1, todoCheck);
+        this.setState({
+          todos: shallowToDoList
+        });
+      });
   }
 
   render() {
