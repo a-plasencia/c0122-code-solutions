@@ -94,11 +94,12 @@ export default class App extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(this.state.todos[todoId].isCompleted)
+      body: JSON.stringify(this.state.todos[todoId])
     })
       .then(res => res.json)
       .then(data => {
         const shallowToDoList = this.state.todos.concat();
+        shallowToDoList[todoId].isCompleted = todoCheck;
         shallowToDoList.splice(todoId, 1, todoCheck);
         this.setState({
           todos: shallowToDoList
