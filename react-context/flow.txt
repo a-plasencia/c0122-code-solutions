@@ -1,0 +1,2 @@
+User can sign up
+So first the page loads on index.jsx
