@@ -84,8 +84,11 @@ export default class App extends React.Component {
      */
 
     const todoCheck = {};
+    let index = 0;
     for (let i = 0; i < this.state.todos.length; i++) {
       if (todoId === this.state.todos[i].todoId) {
+        index = i;
+
         todoCheck.isCompleted = !this.state.todos[i].isCompleted;
       }
     }
@@ -94,13 +97,12 @@ export default class App extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(this.state.todos[todoId])
+      body: JSON.stringify(todoCheck)
     })
-      .then(res => res.json)
+      .then(res => res.json())
       .then(data => {
         const shallowToDoList = this.state.todos.concat();
-        shallowToDoList[todoId].isCompleted = todoCheck;
-        shallowToDoList.splice(todoId, 1, todoCheck);
+        shallowToDoList.splice(index, 1, data);
         this.setState({
           todos: shallowToDoList
         });
