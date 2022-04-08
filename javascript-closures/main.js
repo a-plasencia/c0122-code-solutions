@@ -1,13 +1,12 @@
-// function graduate(credential) {
-//   function fullName(string) {
 
-//   }
-//   return `${string} ${credential}`;
-// }
+function graduate(credential) {
+  return function (fullName) {
+    console.log(`${fullName} ${credential}`);
+  };
+}
 
-// const medicalSchool = graduate('M.D.');
-// const lawSchool = graduate('Esq.');
+const medicalSchool = graduate('M.D.');
+const lawSchool = graduate('Esq.');
 
-// console.log(medicalSchool.fullName('Dan Abramov'));
-
-// console.log(lawSchool.fullName('Ryan Florence'));
+medicalSchool('Dan Abramov');
+lawSchool('Ryan Florence');
