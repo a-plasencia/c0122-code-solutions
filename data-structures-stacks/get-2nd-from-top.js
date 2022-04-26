@@ -1,10 +1,10 @@
 /* exported get2ndFromTop */
 
 function get2ndFromTop(stack) {
-  if (stack.print() === 'Stack { <empty> }') {
+  const value = stack.pop();
+  if (value === undefined) {
     return undefined;
   } else {
-    const value = stack.pop();
     const secondValue = stack.peek();
     stack.push(value);
     return secondValue;

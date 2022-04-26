@@ -1,10 +1,10 @@
 /* exported insertUnderTop */
 
 function insertUnderTop(stack, value) {
-  if (stack.print() === 'Stack { <empty> }') {
+  const x = stack.pop();
+  if (x === undefined) {
     return undefined;
   } else {
-    const x = stack.pop();
     stack.push(value);
     stack.push(x);
   }
