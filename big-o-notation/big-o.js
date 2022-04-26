@@ -8,36 +8,36 @@ function uniqueLinear(words) {
     i < words.length;               // 2 * n = O(2n) ~= 0(n)
     i++                             // 2 * n = O(2n) ~= 0(n)
   ) {
-    const word = words[i];          // 3 * n = O(3n) ~= 0(n)
-    if (!seen[word]) {              // 4 * n = O(4n) ~= 0(n)
-      seen[word] = true;
-      unique[unique.length] = word; // 5 * n = O(5n) ~= 0(n)
+    const word = words[i];          // 2 * n = O(2n) ~= 0(n)
+    if (!seen[word]) {              // 3 * n = O(3n) ~= 0(n)
+      seen[word] = true;            // 2 * n = 0(2n) ~= 0(n)
+      unique[unique.length] = word; // 3 * n = O(3n) ~= 0(n)
     }
   }
   return unique;                    // 1 * 1 = 0(1)
 } // Big O Notation for uniqueLinear: O(n)
 
 function uniqueQuadratic(words) {
-  const unique = [];                // 1 * 1 = O(1)
+  const unique = [];                // 1 * 1 = O(1) // constant time
   for (
     let i = 0;                      // 1 * 1 = O(1)
-    i < words.length;               // 2 * n = O(2n) ~= 0(n)
+    i < words.length;               // 2 * n = O(2n) ~= 0(n) // linear time
     i++                             // 2 * n = O(2n) ~= 0(n)
   ) {
-    const word = words[i];          // 3 * n = O(3n) ~= 0(n)
-    let isUnique = true;            // 4 * n = 0(4n) ~= 0(n)
+    const word = words[i];          // 2 * n = O(2n) ~= 0(n)
+    let isUnique = true;            // 1 * n = 0(1n) ~= 0(n)
     for (
-      let c = 0;                    // 0 * 1 = O(1)
-      c < i;                        // 2n * n = O(n^2) ~= 0(n^2)
-      c++                           // 2n * n = O(n^2) ~= 0(n^2)
+      let c = 0;                    // 1 * n = O(1n)
+      c < i;                        // 1 * n2 = O(1n^2) ~= 0(n^2)
+      c++                           // 2 * n2 = O(2n^2) ~= 0(n^2)
     ) {
-      const comparing = words[c];   // 3n * n = O(3n^2) ~= 0(n^2)
-      if (comparing === word) {     // 4n * n = O(4n^2) ~= 0(n^2)
-        isUnique = false;           // 5n * n = O(5n^2) ~= 0(n^2)
+      const comparing = words[c];   // 2 * n * n = O(2n^2) ~= 0(n^2)
+      if (comparing === word) {     // 2 * n * n = O(2n^2) ~= 0(n^2)
+        isUnique = false;           // 1 * n * n = O(5n^2) ~= 0(n^2)
       }
     }
-    if (isUnique) {                 // 4n * n = O(4n^2) ~= 0(n^2)
-      unique[unique.length] = word; // 5n * n = O(5n^2) ~= 0(n^2)
+    if (isUnique) {                 // 1 * n = O(1n) ~= 0(n)
+      unique[unique.length] = word; // 3 * n = O(3n) ~= 0(n)
     }
   }
   return unique;                    // 1 * 1 = O(1)
