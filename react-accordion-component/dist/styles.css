@@ -1,0 +1,15 @@
+body {
+  background-color: bisque;
+}
+
+button {
+  padding: 2rem;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+p {
+  background-color: gray;
+  color: white;
+}
